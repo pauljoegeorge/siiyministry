@@ -1,10 +1,10 @@
 import React from 'react'
-import { Description } from './components/Components'
+import { Description, Wrapper, Image } from './components/Components'
 import page from '../../assets/data/LandingPage/About/About.json'
 
 const About = () => (
-  <div id="about" className="flex flex-wrap bg-white pt-40">
-    <div className="text-gray-700 text-center px-4 py-2 m-2 sm:max-w-lg">
+  <Wrapper id="about" className="flex flex-wrap bg-white pt-40">
+    <div className="flex-1 text-gray-700 text-center px-4 py-4 m-2">
       <h1
         className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl"
         style={{ textAlign: 'left' }}
@@ -21,10 +21,10 @@ const About = () => (
         )
       })}
     </div>
-    <div className="flex-1 text-gray-700 text-center px-4 py-4 m-2">
-      <img src={require(`../../assets/data/LandingPage/About/${page.image}`)} />
+    <div className="flex-none text-gray-700 text-center px-4 py-2 m-2">
+      <Image src={require(`../../assets/data/LandingPage/About/${page.image}`)} />
     </div>
-  </div>
+  </Wrapper>
 )
 
 export default About
