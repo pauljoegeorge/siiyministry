@@ -6,21 +6,13 @@ import Vision from './pages/Vision'
 import SiiymLogo from './assets/images/common/siiym_logo_2019.png'
 import Leaders from './pages/Leaders'
 import Footer from './components/Footer'
+import LandingArea from './pages/LandingArea'
 
 function App() {
   return (
     <>
       <Navbar />
-      <div
-        id="home"
-        className="section bg-image min-h-screen bg-white"
-        style={{
-          backgroundImage: `url(${SiiymLogo})`,
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-          backgroundPositionY: '50px',
-        }}
-      />
+      <LandingArea />
       <About />
       <Vision />
       <Leaders />

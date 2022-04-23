@@ -1,0 +1,69 @@
+{
+  "head": "Our Leaders",
+  "leaders": [
+    {
+      "id": 1,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    },
+    {
+      "id": 3,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    },
+    {
+      "id": 4,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    },
+    {
+      "id": 5,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    },
+    {
+      "id": 6,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    },
+    {
+      "id": 7,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    },
+    {
+      "id": 8,
+      "name": "Earthen Bottle",
+      "groupName": "Promotion",
+      "icon": "image.jpeg",
+      "alt": "Earthen Bottle",
+      "href": "#"
+    }
+  ]
+}
