@@ -1,68 +1,78 @@
 {
   "head": "Our Leaders",
-  "leaders": [
+  "representatives": [
     {
       "id": 1,
-      "name": "Earthen Bottle",
-      "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
+      "name": "Crystal",
+      "groupName": "Representative",
+      "icon": "/web-assets/public/leaders/crystal.jpeg",
+      "alt": "Crystal",
       "href": "#"
     },
     {
       "id": 2,
-      "name": "Earthen Bottle",
-      "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
+      "name": "Renzo",
+      "groupName": "Representative",
+      "icon": "/web-assets/public/leaders/Renzo.jpeg",
+      "alt": "Renzo",
+      "href": "#"
+    } 
+  ],
+  "leaders": [
+    {
+      "id": 1,
+      "name": "Ivan",
+      "groupName": "Music",
+      "icon": "/web-assets/public/leaders/MooMins+-+Ivan.jpeg",
+      "alt": "IVAN",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "name": "Royston",
+      "groupName": "Liturgy",
+      "icon": "/web-assets/public/leaders/Royston.jpg",
+      "alt": "Royston",
       "href": "#"
     },
     {
       "id": 3,
-      "name": "Earthen Bottle",
-      "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
+      "name": "Dang",
+      "groupName": "Outreach",
+      "icon": "/web-assets/public/leaders/Dang+(OUTREACH).jpeg",
+      "alt": "DANG",
       "href": "#"
     },
     {
       "id": 4,
-      "name": "Earthen Bottle",
-      "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
+      "name": "Valerie",
+      "groupName": "Creatives",
+      "icon": "/web-assets/public/leaders/Valerie.jpeg",
+      "alt": "Valerie",
       "href": "#"
     },
     {
       "id": 5,
-      "name": "Earthen Bottle",
+      "name": "Mariel",
       "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
+      "icon": "/web-assets/public/leaders/MARIEL.jpeg",
+      "alt": "Mariel",
       "href": "#"
     },
     {
       "id": 6,
-      "name": "Earthen Bottle",
-      "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
+      "name": "Kotoe",
+      "groupName": "Warmth",
+      "icon": "/web-assets/public/leaders/Kotoe.jpeg",
+      "alt": "Kotoe",
       "href": "#"
     },
     {
       "id": 7,
-      "name": "Earthen Bottle",
-      "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
-      "href": "#"
-    },
-    {
-      "id": 8,
-      "name": "Earthen Bottle",
-      "groupName": "Promotion",
-      "icon": "image.jpeg",
-      "alt": "Earthen Bottle",
+      "name": "Masato",
+      "groupName": "Logistics",
+      "icon": "/web-assets/public/leaders/Masato+(LOGISTICS).jpeg",
+      "alt": "Masato",
       "href": "#"
     }
   ]

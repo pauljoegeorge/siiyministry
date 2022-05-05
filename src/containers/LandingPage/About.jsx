@@ -21,8 +21,8 @@ const About = () => (
         )
       })}
     </div>
-    <div className="flex-none text-gray-700 text-center px-4 py-2 m-2">
-      <Image src={require(`../../assets/data/LandingPage/About/${page.image}`)} />
+    <div className="flex-none text-gray-700 text-center py-2 m-2">
+      <Image src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}${page.image}`} />
     </div>
   </Wrapper>
 )

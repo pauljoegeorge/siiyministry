@@ -18,3 +18,8 @@ export const Heading = styled.h1`
   text-align: center;
   margin-bottom: 20px;
 `
+
+export const Heading2 = styled.h3`
+  text-align: center;
+  margin-bottom: 20px;
+`
