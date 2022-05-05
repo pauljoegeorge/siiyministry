@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Heading2 } from './components/Components'
+import { Heading } from './components/Components'
 import page from '../../assets/data/LandingPage/Leaders/Leaders.json'
 import { isMobile } from '../../utils/utils'
 

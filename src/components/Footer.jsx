@@ -6,7 +6,9 @@ const Footer = () => (
     <div>
       <img src={SiiymLogo} className="mr-3 h-12" alt="Siiym Logo" />
       <p>© 2022 SIIYM All Rights Reserved</p>
-      <a href={`${window.location.origin}/privacy.html`} target="_blank">Privacy Policy</a>
+      <a href={`${window.location.origin}/privacy.html`} target="_blank">
+        Privacy Policy
+      </a>
     </div>
     <div>
       <span className="footer-title">Social</span>

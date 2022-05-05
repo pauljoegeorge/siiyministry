@@ -1,15 +1,17 @@
+import React from 'react'
+import { Switch, BrowserRouter as Router } from 'react-router-dom'
+import { routeGenerator } from './routes'
 import './index.css'
-import Navbar from './components/Navbar'
-import LandingPage from './pages/LandingPage'
-import Footer from './components/Footer'
 
-function App() {
+function App(props) {
   return (
-    <div>
-      <Navbar />
-      <LandingPage />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        {routeGenerator({
+          ...props,
+        })}
+      </Switch>
+    </Router>
   )
 }
 
