@@ -22,10 +22,7 @@ const UpcomingEvents = () => (
             <div className="mt-4 flex justify-between">
               <div>
                 <h3 className="text-1xl text-gray-700">
-                  <a href={event.href}>
-                    <span aria-hidden="true" className="absolute inset-0" />
-                    {event.title}
-                  </a>
+                  <p>{event.title}</p>
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">{event.datetime} </p>
               </div>
@@ -37,4 +34,4 @@ const UpcomingEvents = () => (
   </div>
 )
 
-export default UpcomingEvents;
+export default UpcomingEvents
