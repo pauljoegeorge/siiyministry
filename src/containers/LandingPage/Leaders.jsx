@@ -13,7 +13,7 @@ const Leaders = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 py-8">
         {!isMobile() && <div />}
         {page.representatives.map((leader) => (
-          <a key={leader.id} href={leader.href} className="group">
+          <a key={leader.id} className="group">
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <img
                 src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}${leader.icon}`}
@@ -29,7 +29,7 @@ const Leaders = () => (
 
       <div className="grid grid-cols-2 gap-y-10 sm:grid-cols-2 gap-x-12 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8">
         {page.leaders.map((leader) => (
-          <a key={leader.id} href={leader.href} className="group">
+          <a key={leader.id} className="group">
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <img
                 src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}${leader.icon}`}

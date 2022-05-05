@@ -16,7 +16,7 @@ const UpcomingEvents = () => (
               <img
                 src={require(`../../assets/data/LandingPage/UpcomingEvents/${event.icon}`)}
                 alt={event.alt}
-                className="w-full h-full object-center object-cover group-hover:opacity-75"
+                className="w-full h-80 object-center object-cover group-hover:opacity-75"
               />
             </div>
             <div className="mt-4 flex justify-between">
