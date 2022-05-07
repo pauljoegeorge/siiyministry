@@ -7,12 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - husky will run lint command on git commit operation
     - this helps to block pushing unformatted code to Github
   ```
-   - git clone https://github.com/pauljoegeorge/create_react_app_boilerplate.git .
+   - git clone git@github.com:pauljoegeorge/siiyministry.git
    - rm package-lock.json
    - npm i -g npm@7
    - npm install
-   - npm run prepare
   ```
+ - Need `.env` file (contact ME)
 
 ## Available Scripts
 
@@ -39,3 +39,7 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Styling libraries used
+  - https://daisyui.com/
+  - https://tailwindcss.com/
