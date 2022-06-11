@@ -1,6 +1,6 @@
-import React from 'react'
-import ErrorContainer from '../../containers/Error'
+import React from 'react';
+import ErrorContainer from '../../containers/Error';
 
-const Error = () => <ErrorContainer />
+const Error = () => <ErrorContainer />;
 
-export default Error
+export default Error;

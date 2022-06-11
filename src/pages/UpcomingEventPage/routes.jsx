@@ -1,12 +1,12 @@
-import UpcomingEvents from './index'
+import UpcomingEvents from './index';
 
 const UpcomingEventRoutes = [
   {
     component: UpcomingEvents,
     path: '/event/:uid',
     exact: true,
-    type: 'public',
-  },
-]
+    type: 'public'
+  }
+];
 
-export default UpcomingEventRoutes
+export default UpcomingEventRoutes;

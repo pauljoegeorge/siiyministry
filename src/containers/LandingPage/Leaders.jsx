@@ -1,7 +1,7 @@
-import React from 'react'
-import { Heading } from './components/Components'
-import page from '../../assets/data/LandingPage/Leaders/Leaders.json'
-import { isMobile } from '../../utils/utils'
+import React from 'react';
+import { Heading } from './components/Components';
+import page from '../../assets/data/LandingPage/Leaders/Leaders.json';
+import { isMobile } from '../../utils/utils';
 
 const Leaders = () => (
   <div id="leaders" className="bg-white">
@@ -44,6 +44,6 @@ const Leaders = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default Leaders
+export default Leaders;

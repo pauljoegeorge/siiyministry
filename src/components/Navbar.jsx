@@ -1,17 +1,15 @@
-import React from 'react'
-import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import React from 'react';
 
 const navigation = [
   { name: 'About', href: '#about', current: false },
   { name: 'Mission & Vision', href: '#vision', current: false },
   { name: 'Leaders', href: '#leaders', current: false },
   { name: 'Events', href: '#events', current: false },
-  { name: 'Social', href: '#social', current: false },
-]
+  { name: 'Social', href: '#social', current: false }
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 const Navbar = () => (
@@ -24,23 +22,30 @@ const Navbar = () => (
             className="h-5 w-5"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+            stroke="currentColor">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
           </svg>
         </label>
-        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <ul
+          tabIndex="0"
+          className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
           {navigation.map((item, index) => (
             <li key={`${index}-parent`}>
               <a
                 key={index}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                  item.current
+                    ? 'bg-gray-900 text-white'
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                   'px-3 py-2 rounded-md text-sm font-medium'
                 )}
-                aria-current={item.current ? 'page' : undefined}
-              >
+                aria-current={item.current ? 'page' : undefined}>
                 {item.name}
               </a>
             </li>
@@ -61,11 +66,12 @@ const Navbar = () => (
               key={`child-${index}`}
               href={item.href}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                item.current
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                 'px-3 py-2 rounded-md text-sm font-medium'
               )}
-              aria-current={item.current ? 'page' : undefined}
-            >
+              aria-current={item.current ? 'page' : undefined}>
               {item.name}
             </a>
           </li>
@@ -78,6 +84,6 @@ const Navbar = () => (
       </a>
     </div>
   </div>
-)
+);
 
-export default Navbar
+export default Navbar;

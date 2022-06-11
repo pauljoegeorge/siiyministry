@@ -1,6 +1,6 @@
-import React from 'react'
-import UpcomingEventContainer from '../../containers/UpcomingEvents'
+import React from 'react';
+import UpcomingEventContainer from '../../containers/UpcomingEvents';
 
-const UpcomingEventsPage = () => <UpcomingEventContainer />
+const UpcomingEventsPage = () => <UpcomingEventContainer />;
 
-export default UpcomingEventsPage
+export default UpcomingEventsPage;

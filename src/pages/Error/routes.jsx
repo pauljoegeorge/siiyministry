@@ -1,12 +1,12 @@
-import Error from './index'
+import Error from './index';
 
 const ErrorRoutes = [
   {
     component: Error,
     path: '*',
     exact: true,
-    type: 'public',
-  },
-]
+    type: 'public'
+  }
+];
 
-export default ErrorRoutes
+export default ErrorRoutes;

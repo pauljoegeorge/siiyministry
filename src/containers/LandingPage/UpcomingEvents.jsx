@@ -1,6 +1,6 @@
-import React from 'react'
-import { Heading } from './components/Components'
-import page from '../../assets/data/LandingPage/UpcomingEvents/UpcomingEvents.json'
+import React from 'react';
+import { Heading } from './components/Components';
+import page from '../../assets/data/LandingPage/UpcomingEvents/UpcomingEvents.json';
 
 const UpcomingEvents = () => (
   <div id="events" className="bg-white">
@@ -9,7 +9,7 @@ const UpcomingEvents = () => (
         {page.head}
       </Heading>
 
-      <div className="grid grid-cols-2 gap-y-10 sm:grid-cols-2 gap-x-12 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+      {/* <div className="grid grid-cols-2 gap-y-10 sm:grid-cols-2 gap-x-12 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
         {page.events.map((event) => (
           <a key={event.id} href={`/event/${event.uid}`} className="group">
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
@@ -29,9 +29,17 @@ const UpcomingEvents = () => (
             </div>
           </a>
         ))}
+      </div> */}
+
+      <div className="hero-content text-center" width="80%">
+        <div>
+          <img
+            src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}/web-assets/public/calendars/siiym_june_2022_calendar.jpeg`}
+          />
+        </div>
       </div>
     </div>
   </div>
-)
+);
 
-export default UpcomingEvents
+export default UpcomingEvents;

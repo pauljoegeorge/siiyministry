@@ -1,9 +1,9 @@
-import React from 'react'
-import LandingArea from '../../containers/LandingPage/LandingArea'
-import About from '../../containers/LandingPage/About'
-import Vision from '../../containers/LandingPage/Vision'
-import Leaders from '../../containers/LandingPage/Leaders'
-import UpcomingEvents from '../../containers/LandingPage/UpcomingEvents'
+import React from 'react';
+import LandingArea from '../../containers/LandingPage/LandingArea';
+import About from '../../containers/LandingPage/About';
+import Vision from '../../containers/LandingPage/Vision';
+import Leaders from '../../containers/LandingPage/Leaders';
+import UpcomingEvents from '../../containers/LandingPage/UpcomingEvents';
 
 const LandingPage = () => (
   <>
@@ -13,6 +13,6 @@ const LandingPage = () => (
     <UpcomingEvents />
     <Leaders />
   </>
-)
+);
 
-export default LandingPage
+export default LandingPage;

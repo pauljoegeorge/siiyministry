@@ -1,12 +1,12 @@
-import LandingPage from './LandingPage'
+import LandingPage from './LandingPage';
 
 const LandingRoutes = [
   {
     component: LandingPage,
     path: '/',
     exact: true,
-    type: 'public',
-  },
-]
+    type: 'public'
+  }
+];
 
-export default LandingRoutes
+export default LandingRoutes;

@@ -26,11 +26,11 @@
   },
   "scripts": {
     "start": "ESLINT_NO_DEV_ERRORS=true env-cmd -f .env.development react-scripts start",
-    "build": "react-scripts build",
+    "build": "ESLINT_NO_DEV_ERRORS=true env-cmd -f .env.development react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "clean": "prettier --write src --ext .js --ext .jsx",
+    "clean": "prettier --write src .jsx",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
@@ -59,6 +59,7 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
     "postcss": "^8.4.12",
