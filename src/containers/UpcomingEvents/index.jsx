@@ -55,7 +55,7 @@ const UpcomingEventContainer = () => {
       <div className="pt-6">
         <div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
           <img
-            src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}/web-assets/public/about_us.jpeg`}
+            src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}/web-assets/public/upcoming_events/${upcomingEvent?.icon}`}
             alt="about_us"
             className="w-full h-full object-contain object-cover"
           />

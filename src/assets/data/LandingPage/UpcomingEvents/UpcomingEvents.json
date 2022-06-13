@@ -4,83 +4,15 @@
     {
       "id": 1,
       "uid": "hangout_1",
-      "title": "Hangout March 2022",
-      "datetime": "2022/9/12 10:00 ~ 15:00",
-      "date": "20th March 2020 (Sun)",
-      "time": "10:00 ~ 15:00",
-      "location": "Yotsuya, Room 103",
+      "title": "Youth Event June 2022",
+      "datetime": "2022/6/26 13:30 ~ 16:00",
+      "date": "26th June 2022 (Sun)",
+      "time": "13:30 ~ 16:00",
+      "location": "ST. JOSEPH HALL",
       "more": "Join",
-      "icon": "about_us.jpeg",
-      "alt": "Earthen Bottle",
-      "href": "#",
-      "description": "In light of Russia's invasion of Ukraine, Kishi said unilateral attempts to change the status quo by force are a concern also in the Indo-Pacific. \nHe said deterring such a move is of utmost importance. Kishi and Austin agreed to strengthen their cooperation on China. They also underlined the importance of peace and stability across the Taiwan Strait.",
-      "highlights": {
-        "head": "Highlights",
-        "bullets": [
-          "Hand cut and sewn locally",
-          "Dyed with our proprietary colors",
-          "Pre-washed & pre-shrunk",
-          "Ultra-soft 100% cotton"
-        ]
-      },
-      "moreDetails": {
-        "head": "Details",
-        "description": "The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming 'Charcoal Gray' limited release."
-      }
-    },
-    {
-      "id": 2,
-      "uid": "hangout_2",
-      "title": "Hangout March 2022",
-      "datetime": "2022/9/12 10:00 ~ 15:00",
-      "date": "20th March 2020 (Sun)",
-      "time": "10:00 ~ 15:00",
-      "location": "Yotsuya, Room 103",
-      "more": "Join",
-      "icon": "about_us.jpeg",
-      "alt": "Earthen Bottle",
-      "href": "#",
-      "description": "In light of Russia's invasion of Ukraine, Kishi said unilateral attempts to change the status quo by force are a concern also in the Indo-Pacific. \nHe said deterring such a move is of utmost importance. Kishi and Austin agreed to strengthen their cooperation on China. They also underlined the importance of peace and stability across the Taiwan Strait.",
-      "highlights": {
-        "head": "Highlights",
-        "bullets": [
-          "Hand cut and sewn locally",
-          "Dyed with our proprietary colors",
-          "Pre-washed & pre-shrunk",
-          "Ultra-soft 100% cotton"
-        ]
-      },
-      "moreDetails": {
-        "head": "Details",
-        "description": "The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming 'Charcoal Gray' limited release."
-      }
-    },
-    {
-      "id": 3,
-      "uid": "hangout_3",
-      "title": "Callback refs will continue to be supported in addition - 3",
-      "datetime": "2022/9/12 10:00 ~ 15:00",
-      "date": "20th March 2020 (Sun)",
-      "time": "10:00 ~ 15:00",
-      "location": "Yotsuya, Room 103",
-      "more": "Join",
-      "icon": "about_us.jpeg",
-      "alt": "Earthen Bottle",
-      "href": "#",
-      "description": "In light of Russia's invasion of Ukraine, Kishi said unilateral attempts to change the status quo by force are a concern also in the Indo-Pacific. \nHe said deterring such a move is of utmost importance. Kishi and Austin agreed to strengthen their cooperation on China. They also underlined the importance of peace and stability across the Taiwan Strait.",
-      "highlights": {
-        "head": "Highlights",
-        "bullets": [
-          "Hand cut and sewn locally",
-          "Dyed with our proprietary colors",
-          "Pre-washed & pre-shrunk",
-          "Ultra-soft 100% cotton"
-        ]
-      },
-      "moreDetails": {
-        "head": "Details",
-        "description": "The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming 'Charcoal Gray' limited release."
-      }
+      "icon": "youth-event.jpeg",
+      "alt": "Youth Event June 2022",
+      "href": "#"
     }
   ]
 }
