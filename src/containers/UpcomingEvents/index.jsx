@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { pushEvent, events } from '../../utils/gtm';
 import GCalendar from '!file-loader!../../assets/images/common/gcalendar.svg';
 import upcomingEvents from '../../assets/data/LandingPage/UpcomingEvents/UpcomingEvents.json';
 
@@ -43,12 +44,18 @@ const UpcomingEventContainer = () => {
     const processedEventFrom = eventFrom?.replaceAll(/-|:|/gi, '')?.replace('.', '');
     const processEventTo = eventTo?.replaceAll(/-|:|/gi, '')?.replace('.', '');
     if (calendar === 'google') {
+      pushEvent({ ...events.onClickSaveToSaveCalendar('google') });
       return window.open(
         `${GCalendarBaseUrl}text=${upcomingEvent.title}&dates=${processedEventFrom}/${processEventTo}`,
         '_blank'
       );
     }
   };
+
+  const joinMeeting = (source = 'button') => {
+    pushEvent({ ...events.onClickJoinEvent(source, upcomingEvent?.uid) });
+    window.open(upcomingEvent?.register_link);
+  }
 
   return (
     <div className="bg-white">
@@ -90,14 +97,16 @@ const UpcomingEventContainer = () => {
             </div>
             {upcomingEvent?.register_link && (
               <button
-                onClick={() => window.open(`${upcomingEvent?.register_link}`)}
-                className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                onClick={() => joinMeeting()}
+                className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
                 <p className="text-white text-lg">Register Online</p>
               </button>
             )}
             <button
               onClick={() => saveToCalendar('google')}
-              className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
               <img src={GCalendar} alt="A Rectangle Image with SVG" height="45px" width="45px" />
               <p className="text-white text-lg">Save to Calendar</p>
             </button>
