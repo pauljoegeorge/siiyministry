@@ -54,8 +54,8 @@ const UpcomingEventContainer = () => {
 
   const joinMeeting = (source = 'button') => {
     pushEvent({ ...events.onClickJoinEvent(source, upcomingEvent?.uid) });
-    window.open(upcomingEvent?.register_link);
-  }
+    return window.open(upcomingEvent?.register_link);
+  };
 
   return (
     <div className="bg-white">
@@ -98,15 +98,13 @@ const UpcomingEventContainer = () => {
             {upcomingEvent?.register_link && (
               <button
                 onClick={() => joinMeeting()}
-                className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
+                className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 <p className="text-white text-lg">Register Online</p>
               </button>
             )}
             <button
               onClick={() => saveToCalendar('google')}
-              className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
+              className="mt-10 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               <img src={GCalendar} alt="A Rectangle Image with SVG" height="45px" width="45px" />
               <p className="text-white text-lg">Save to Calendar</p>
             </button>
