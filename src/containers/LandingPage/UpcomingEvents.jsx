@@ -48,7 +48,7 @@ const UpcomingEvents = () => (
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{event.datetime} </p>
                   <button className="mt-1 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    <p className="text-white text-lg">Save to Calendar</p>
+                    <p className="text-white text-lg">Join event</p>
                   </button>
                 </div>
               </div>

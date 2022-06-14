@@ -27,7 +27,7 @@
   "scripts": {
     "start": "ESLINT_NO_DEV_ERRORS=true env-cmd -f .env.development react-scripts start",
     "build": "ESLINT_NO_DEV_ERRORS=true env-cmd -f .env.development react-scripts build",
-    "deploy:prod": "rm -rf build/ && npm run build && aws s3 sync build/ s3://siiyministry.org --acl public-read --profile siiym",
+    "deploy:prod": "rm -rf build/ && npm run build && aws s3 sync build/ s3://www.siiyministry.org --acl public-read --profile siiym",
     "test": "react-scripts test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
