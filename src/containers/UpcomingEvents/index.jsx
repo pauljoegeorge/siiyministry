@@ -46,7 +46,7 @@ const UpcomingEventContainer = () => {
     if (calendar === 'google') {
       pushEvent({ ...events.onClickSaveToSaveCalendar('google') });
       return window.open(
-        `${GCalendarBaseUrl}text=${upcomingEvent.title}&dates=${processedEventFrom}/${processEventTo}`,
+        `${GCalendarBaseUrl}text=${upcomingEvent?.title}&dates=${processedEventFrom}/${processEventTo}`,
         '_blank'
       );
     }
