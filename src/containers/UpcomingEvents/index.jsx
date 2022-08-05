@@ -4,17 +4,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { pushEvent, events } from '../../utils/gtm';
 import GCalendar from '!file-loader!../../assets/images/common/gcalendar.svg';
-import upcomingEvents from '../../assets/data/LandingPage/UpcomingEvents/UpcomingEvents.json';
+import { useData } from '../../hooks/useData';
 
 const UpcomingEventContainer = () => {
+  const { upcomingEvents, actions } = useData();
   const [upcomingEvent, setUpcomingEvent] = useState(null);
   const { uid } = useParams();
   const GCalendarBaseUrl = 'https://calendar.google.com/calendar/r/eventedit?';
 
   useEffect(() => {
+    actions.getUpcomingEvents();
+  }, []);
+
+  useEffect(() => {
     if (upcomingEvents) {
-      const events = upcomingEvents.events;
-      const event = events.filter((event) => event.uid === uid);
+      const events = upcomingEvents?.events;
+      const event = events?.filter((event) => event.uid === uid);
       if (Object.keys(event).length === 0) {
         return (location.href = '/error');
       }

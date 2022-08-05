@@ -1,11 +1,14 @@
 import React from 'react';
 import { pushEvent, events } from '../utils/gtm';
-import SiiymLogo from '../assets/images/common/siiym_logo_2019.png';
 
 const Footer = () => (
   <footer id="social" className="footer p-10 bg-neutral text-neutral-content">
     <div>
-      <img src={SiiymLogo} className="mr-3 h-12" alt="Siiym Logo" />
+      <img
+        src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}/web-assets/public/siiym_logo_2019.png`}
+        className="mr-3 h-12"
+        alt="Siiym Logo"
+      />
       <p>© 2022 SIIYM All Rights Reserved</p>
       <a
         href={`${window.location.origin}/privacy.html`}
