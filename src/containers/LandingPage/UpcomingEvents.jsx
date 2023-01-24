@@ -38,28 +38,30 @@ const UpcomingEvents = () => {
           ))}
         </div> */}
         <div className="hero-content text-center">
-          <div>
-            {upcomingEvents?.events?.map((event) => (
-              <a key={event?.id} href={`/event/${event?.uid}`} className="group">
-                <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                  <img
-                    src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}/web-assets/public/upcoming_events/${event?.icon}`}
-                    alt={event?.alt}
-                    className="w-full h-80 object-center object-cover group-hover:opacity-75"
-                  />
-                </div>
-                <div className="mt-4 flex justify-between">
-                  <div>
-                    <h3 className="text-1xl text-gray-700">
-                      <p>{event?.title}</p>
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-500">{event?.datetime} </p>
-                    <button className="mt-1 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                      <p className="text-white text-lg">Join event</p>
-                    </button>
+          <div className="flex">
+            {upcomingEvents?.events?.map((event, index) => (
+              <div className={`flex-${index} pl-8`} key={`event-${index}`}>
+                <a key={event?.id} href={`/event/${event?.uid}`} className="group">
+                  <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                    <img
+                      src={`${process.env.REACT_APP_S3_ASSETS_BASE_URL}/web-assets/public/upcoming_events/${event?.icon}`}
+                      alt={event?.alt}
+                      className="w-full h-80 object-center object-cover group-hover:opacity-75"
+                    />
                   </div>
-                </div>
-              </a>
+                  <div className="mt-4 flex justify-between">
+                    <div>
+                      <h3 className="text-1xl text-gray-700">
+                        <p>{event?.title}</p>
+                      </h3>
+                      <p className="mt-1 text-sm text-gray-500">{event?.datetime} </p>
+                      <button className="mt-1 gap-2 w-full btn-success border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <p className="text-white text-lg">Join event</p>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
             ))}
           </div>
         </div>
