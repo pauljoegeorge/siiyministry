@@ -3,9 +3,10 @@ import { Route } from 'react-router-dom';
 import LayoutContainer from './containers/Layout';
 import LandingRoutes from './pages/LandingPage/routes';
 import UpcomingEventRoutes from './pages/UpcomingEventPage/routes';
+import HelpRoutes from './pages/Help/routes';
 import ErrorRoutes from './pages/Error/routes';
 
-const routes = [...LandingRoutes, ...UpcomingEventRoutes, ...ErrorRoutes];
+const routes = [...LandingRoutes, ...UpcomingEventRoutes, ...HelpRoutes, ...ErrorRoutes];
 
 const renderRoute = (route, props) => (
   <Route
